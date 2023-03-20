@@ -17,8 +17,6 @@ export function Content() {
   useEffect(handleIndexKids, []);
   return (
     <div>
-      <Signup />
-      <Login />
       <KidsIndex kids={kids} />
     </div>
   );
