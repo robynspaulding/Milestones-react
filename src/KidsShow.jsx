@@ -15,11 +15,15 @@ export function KidsShow() {
   useEffect(handleShowKid, []);
 
   return (
-    <div id="kids-show">
-      <div key={kid.id}></div>
-      <h1>{kid.name}</h1>
-      <img src={kid.image_url} style={{ width: "20rem" }} />
-      <h3>Birthday: {kid.birthday}</h3>
+    <div id="kids-show" className="row justify-content-center">
+      <div className="card col-2 shadow m-3" style={{ width: "20rem" }}>
+        <img className="card-img" src={kid.image_url} alt="Card image cap" />
+        <div className="card-body">
+          <p className="card-text">
+            {kid.name} <br /> {kid.birthday}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

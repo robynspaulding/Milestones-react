@@ -3,9 +3,10 @@ import { Header } from "./Header";
 import { Content } from "./Content";
 import { Footer } from "./Footer";
 import { Login } from "./Login";
-import { Signup } from "../Signup";
+import { Signup } from "./Signup";
 import { KidsShow } from "./KidsShow";
 import { KidsNew } from "./KidsNew";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
