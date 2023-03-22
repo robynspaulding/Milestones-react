@@ -6,6 +6,7 @@ import { Login } from "./Login";
 import { Signup } from "./Signup";
 import { KidsShow } from "./KidsShow";
 import { KidsNew } from "./KidsNew";
+import { FamilyTreesIndex } from "./FamilyTreesIndex";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/kids/:id" element={<KidsShow />} />
         <Route path="/kids/new" element={<KidsNew />} />
+        <Route path="/family_trees" element={<FamilyTreesIndex />} />
       </Routes>
       <Footer />
     </BrowserRouter>

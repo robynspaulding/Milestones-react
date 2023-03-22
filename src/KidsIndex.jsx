@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export function KidsIndex(props) {
   return (
     <div id="kids-index" className="container">
-      <h1>Your Kids</h1>
+      <h1> Kids</h1>
       {props.kids.map((kid) => (
         <div key={kid.id} className="row justify-content-center">
           <div className="card col-2 shadow m-3" style={{ width: "40rem" }}>
