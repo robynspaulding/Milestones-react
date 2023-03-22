@@ -11,13 +11,25 @@ export function KidsUpdate(props) {
 
   return (
     <div id="kids-update">
-      <form onSubmit={handleSubmit}>
-        <input name="name" type="text" defaultValue={props.kid.name} />
-        <input name="birthday" type="text" defaultValue={props.kid.birthday} />
-        <input name="image_url" type="text" defaultValue={props.kid.image_url} />
-        <button type="submut"> Update {props.kid.name}'s Info </button>
-        <button onClick={handleClick}>Delete Profile </button>
-      </form>
+      <div className="container">
+        <h3>Edit {props.kid.name}'s info</h3>
+        <form onSubmit={handleSubmit} className="row justify-content-center">
+          <div className="card shadow m-3" style={{ width: "20rem" }}>
+            <input name="name" type="text" defaultValue={props.kid.name} />
+            <input name="birthday" type="text" defaultValue={props.kid.birthday} />
+            <input name="image_url" type="text" defaultValue={props.kid.image_url} />
+            <br />
+            <button className="btn btn-outline-primary" type="submut">
+              {" "}
+              Update Info{" "}
+            </button>
+            <br />
+            <button className="btn btn-outline-danger" onClick={handleClick}>
+              Delete Profile{" "}
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

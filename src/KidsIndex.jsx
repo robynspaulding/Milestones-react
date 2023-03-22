@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 export function KidsIndex(props) {
   return (
     <div id="kids-index" className="container">
-      <h1>All Kids</h1>
+      <h1>Your Kids</h1>
       {props.kids.map((kid) => (
         <div key={kid.id} className="row justify-content-center">
-          <div className="card-deck col-2 shadow m-3" style={{ width: "40rem" }}>
+          <div className="card col-2 shadow m-3" style={{ width: "40rem" }}>
             <h2 className="card-title"> {kid.name}</h2>
             <br />
-
-            <img src={kid.image_url} style={{ width: "18rem" }} />
+            <div className="row justify-content-center">
+              <img src={kid.image_url} style={{ width: "18rem" }} />
+            </div>
             <br />
             <br />
             <div className="col text-center">
