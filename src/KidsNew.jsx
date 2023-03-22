@@ -2,6 +2,7 @@ import axios from "axios";
 import bioLogo from "./assets/bio.png";
 import imageLogo from "./assets/person.png";
 import birthdayLogo from "./assets/birthday.png";
+import { Button } from "rsuite";
 
 export function KidsNew() {
   const handleCreateKid = (params) => {
@@ -67,9 +68,12 @@ export function KidsNew() {
               />
             </div>
             <div className="row justify-content-center">
-              <button className="btn btn-outline-primary" type="submit">
+              {/* <button className="btn btn-outline-primary" type="submit">
                 Create Profile
-              </button>
+              </button> */}
+              <Button color="green" appearance="ghost" type="submit">
+                Create Profile
+              </Button>
             </div>
           </form>
         </div>

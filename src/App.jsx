@@ -8,6 +8,7 @@ import { KidsShow } from "./KidsShow";
 import { KidsNew } from "./KidsNew";
 import { FamilyTreesIndex } from "./FamilyTreesIndex";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "rsuite/dist/rsuite.min.css";
 
 function App() {
   return (
