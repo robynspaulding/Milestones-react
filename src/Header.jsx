@@ -11,7 +11,7 @@ export function Header() {
         <a href="/kids/new">Add Kid</a> | <a href="/family_trees">My Family Tree</a> | <a href="/kids/new">Add Kid</a>{" "}
         <LogoutLink />
       </nav> */}
-      <Navbar bg="primary" variant="dark">
+      <Navbar className="color-nav">
         <Container>
           <Navbar.Brand href="/">Milestones</Navbar.Brand>
           <Nav className="me-auto">
